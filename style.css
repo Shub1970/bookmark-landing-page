@@ -206,6 +206,10 @@ select {
   padding-block: var(--size-800);
 }
 
+.text-align {
+  text-align: center;
+}
+
 :is(.flow :not(:first-child)) {
   margin-top: var(--flow-spacer, 1rem);
 }
@@ -288,6 +292,12 @@ body {
   grid-area: stack;
 }
 
+p[limit] {
+  width: 42%;
+  margin-inline: auto;
+  text-align: center;
+}
+
 .primary-navigation {
   display: flex;
   align-items: center;
@@ -316,3 +326,120 @@ body {
   background-color: var(--clr-primary-400);
   border-radius: 100vmax 0px 0px 100vmax;
 }
+
+.features .tab-container {
+  margin-top: var(--size-700);
+  display: flex;
+  max-width: 50%;
+  gap: var(--size-700);
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  padding: var(--size-400) var(--size-500);
+  border-bottom: 2px solid hsl(229, 8%, 60%, 37%);
+}
+
+.features .tabpanel-container > div:not([hidden="true"]) {
+  display: flex;
+  align-items: center;
+}
+.features .tabpanel-container > div > * {
+  flex: 1;
+}
+
+.features {
+  position: relative;
+}
+
+.features::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 40%;
+  height: 44%;
+  z-index: -1;
+  margin-right: auto;
+  margin-top: auto;
+  background-color: var(--clr-primary-400);
+  border-radius: 0px 100vmax 100vmax 0px;
+}
+
+.extension-card {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.extension-card .card {
+  --card-offset: var(--size-700);
+  border-radius: var(--size-200);
+  padding: var(--size-400);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.extension-card .card:nth-child(1) {
+  margin-top: calc(1 * var(--card-offset));
+}
+.extension-card .card:nth-child(2) {
+  margin-top: calc(2 * var(--card-offset));
+}
+.extension-card .card:nth-child(3) {
+  margin-top: calc(3 * var(--card-offset));
+}
+
+.extension-card .card .title {
+  margin-top: 20px;
+}
+.extension-card .card .button {
+  margin-top: 40px;
+}
+
+.ques-ans {
+  width: 42%;
+  margin-inline: auto;
+}
+
+.ques-ans .question {
+  position: relative;
+}
+.ques-ans .question::after {
+  content: url(public/images/icon-down.svg);
+  fill: red;
+  position: absolute;
+  right: 20px;
+  transition: all 400ms ease-out;
+}
+
+.ques-ans {
+  padding-inline: 0px;
+}
+
+.ques-ans li {
+  display: grid;
+  grid-template-rows: auto 0fr;
+  transition: 400ms;
+  border-bottom: 2px solid hsl(229, 8%, 60%, 37%);
+  border-top: 2px solid hsl(229, 8%, 60%, 37%);
+}
+
+.ques-ans li p {
+  overflow: hidden;
+}
+
+.ques-ans li:hover {
+  grid-template-rows: auto 1fr;
+}
+
+.ques-ans li:hover .question::after {
+  transform: rotate(180deg);
+}
+
+/* .ques-ans li:hover p.answer {
+  margin-block: var(--size-500);
+} */
