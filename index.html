@@ -215,16 +215,20 @@
           <div class="tab-container">
             <div
               id="tab-1"
-              aria-labelledby="tab-1"
+              aria-labelledby="tab"
+              aria-selected="true"
+              aria-expanded="true"
               aria-controls="tabpanel-1"
-              tabindex="-1"
+              tabindex="0"
               class="fw-semiBold fs-500 txt-primary-300"
             >
               Simple Bookmarking
             </div>
             <div
               id="tab-2"
-              aria-labelledby="tab-2"
+              aria-labelledby="tab"
+              aria-selected="false"
+              aria-expanded="false"
               aria-controls="tabpanel-2"
               tabindex="-1"
               class="fw-semiBold fs-500 txt-primary-300"
@@ -233,7 +237,9 @@
             </div>
             <div
               id="tab-3"
-              aria-labelledby="tab-3"
+              aria-labelledby="tab"
+              aria-selected="false"
+              aria-expanded="false"
               aria-controls="tabpanel-3"
               tabindex="-1"
               class="fw-semiBold fs-500 txt-primary-300"
@@ -244,6 +250,7 @@
           <div class="tabpanel-container padding-block-800">
             <div
               id="tabpanel-1"
+              role="tabpanel"
               tabindex="0"
               hidden="false"
               aria-labelledby="tab-1"
@@ -270,6 +277,7 @@
             </div>
             <div
               id="tabpanel-2"
+              role="tabpanel"
               tabindex="0"
               hidden="true"
               aria-labelledby="tab-2"
@@ -296,6 +304,7 @@
             </div>
             <div
               id="tabpanel-3"
+              role="tabpanel"
               tabindex="0"
               hidden="true"
               aria-labelledby="tab-3"
@@ -419,11 +428,58 @@
               </p>
             </li>
           </ul>
+          <button class="button">More Info</button>
+        </div>
+      </section>
+      <section class="contact-us padding-block-800 bg-primary-400">
+        <div class="container">
+          <hgroup class="flow">
+            <h2 class="txt-neutral-200 fw-semiBold fs-300 text-align">
+              35,000+ ALREADY JOINED
+            </h2>
+            <p class="txt-neutral-200 fw-regular fs-600 text-align">
+              Stay up-to-date with what we're doing
+            </p>
+          </hgroup>
+          <form action="post">
+            <div class="input-container">
+              <input
+                class="txt-primary-300 fs-300"
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+              />
+              <p class="error fs-300 txt-neutral-200 fw-regular">
+                whoops, make sure it's a email
+              </p>
+            </div>
+            <button type="submit" class="button" invert>contact us</button>
+          </form>
         </div>
       </section>
     </main>
+    <footer class="bg-primary-800">
+      <div class="container footer-navigation">
+        <svg class="icon" style="--color: white">
+          <use xlink:href="images/all-logo.svg#logo-bookmark"></use>
+        </svg>
+        <nav aria-labelledby="secondary navigation" id="secondary_nav">
+          <ul role="list">
+            <li aria-current="page">
+              <a href="#" class="fw-semiBold txt-neutral-200">FEATURES</a>
+            </li>
+            <li aria-current="page">
+              <a href="#" class="fw-semiBold txt-neutral-200">PRICING</a>
+            </li>
+            <li aria-current="page">
+              <a href="#" class="fw-semiBold txt-neutral-200">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
 
-    <footer>
+        <img src="public/images/icon-facebook.svg" alt="facebook icon" />
+        <img src="public/images/icon-twitter.svg" alt="facebook icon" />
+      </div>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -431,5 +487,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
