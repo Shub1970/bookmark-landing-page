@@ -32,160 +32,61 @@
     </style>
   </head>
   <body>
-    <!--     
-  Features
-  Pricing
-  Contact
-  Login
-
-  A Simple Bookmark Manager
-
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
-
-  Get it on Chrome
-  Get it on Firefox
-
-  Features
-
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
-
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
-
-  Bookmark in one click
-
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
-
-  More Info
-
-  Intelligent search
-
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
-
-  More Info
-
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info
-
-  Download the extension
-
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-  got a favourite you’d like us to prioritize.
-
-  Add to Chrome
-  Minimum version 62
-  Add & Install Extension
-
-  Add to Firefox
-  Minimum version 55
-  Add & Install Extension
-
-  Add to Opera
-  Minimum version 46
-  Add & Install Extension
-
-  Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us. -->
-    <!-- Question 1 -->
-    <!-- What is Bookmark? -->
-
-    <!-- Answer 1 -->
-    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare
-    mattis. -->
-
-    <!-- Question 2 -->
-    <!-- How can I request a new browser? -->
-
-    <!-- Answer 2 -->
-    <!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-    ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
-    convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
-    imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
-    massa, ultricies non ligula. Suspendisse imperdiet. -->
-
-    <!-- Question 3 -->
-    <!-- Is there a mobile app? -->
-
-    <!-- Answer 3 -->
-    <!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum
-    dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra
-    mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum. -->
-
-    <!-- Question 4 -->
-    <!-- What about other Chromium browsers? -->
-
-    <!-- Answer 4 -->
-    <!-- Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at
-    euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut
-    velit. More Info 35,000+ already joined Stay up-to-date with what we’re
-    doing Contact Us Features Pricing Contact -->
-    <!-- <svg class="icon">
-      <use xlink:href="public/images/all-logo#icon-facebook"></use>
-    </svg>
-    <svg class="icon">
-      <use xlink:href="public/images/all-logo#icon-twitter"></use>
-    </svg>
-    <svg class="icon">
-      <use xlink:href="public/images/all-logo#logo-bookmark"></use>
-    </svg>
-    <svg class="icon">
-      <use xlink:href="public/images/all-logo#logo-chrome"></use>
-    </svg>
-    <svg class="icon">
-      <use xlink:href="public/images/all-logo#logo-opera"></use>
-    </svg> -->
-
     <header>
       <div class="container primary-navigation">
-        <svg class="icon">
+        <svg class="icon primary-company-logo" position="none">
           <use xlink:href="images/all-logo.svg#logo-bookmark"></use>
         </svg>
         <button
-          class="stack"
+          class="stack nav-button"
           aria-controls="primary_nav"
           aria-expanded="false"
-          aria-hidden="true"
+          position="none"
         >
-          <img src="public/images/icon-close.svg" alt="Close menu" />
-          <img src="public/images/icon-hamburger.svg" alt="Open menu" />
+          <img src="public/images/icon-close.svg" class="close" alt="Close" />
+          <img
+            src="public/images/icon-hamburger.svg"
+            class="hamburger show"
+            alt="Open"
+          />
           <p class="visually-hidden">Main</p>
         </button>
-        <nav aria-labelledby="primary navigation" id="primary_nav">
-          <ul role="list">
-            <li aria-current="page">
-              <a href="#" class="fw-semiBold">FEATURES</a>
-            </li>
-            <li aria-current="page">
-              <a href="#" class="fw-semiBold">PRICING</a>
-            </li>
-            <li aria-current="page">
-              <a href="#" class="fw-semiBold">CONTACT</a>
-            </li>
-            <li aria-current="page">
-              <button class="login-button">LOGIN</button>
-            </li>
-          </ul>
-        </nav>
+        <div class="all-link">
+          <nav aria-labelledby="primary navigation" id="primary_nav">
+            <ul role="list" class="container">
+              <li aria-current="page">
+                <a href="#" class="fw-semiBold">FEATURES</a>
+              </li>
+              <li aria-current="page">
+                <a href="#" class="fw-semiBold">PRICING</a>
+              </li>
+              <li aria-current="page">
+                <a href="#" class="fw-semiBold">CONTACT</a>
+              </li>
+              <li aria-current="page">
+                <button class="button" no="2">LOGIN</button>
+              </li>
+            </ul>
+          </nav>
+          <div class="icon-container">
+            <a href="#"
+              ><img src="public/images/icon-facebook.svg" alt="icon"
+            /></a>
+            <a href="#"
+              ><img src="public/images/icon-twitter.svg" alt="icon"
+            /></a>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero padding-block-800">
         <div class="container d-flex-even align-item-center">
           <div class="right flow">
-            <h1 class="txt-primary-900 fs-700">A Simple Bookmark Manager</h1>
-            <p class="txt-primary-300 fs-500 fw-regular">
+            <h1 class="txt-primary-900 fs-700 s-text-align">
+              A Simple Bookmark Manager
+            </h1>
+            <p class="txt-primary-300 fs-500 fw-regular s-text-align">
               A clean and simple interface to organize your favourite websites.
               Open a new browser tab and see your sites load instantly. Try it
               for free.
@@ -196,7 +97,11 @@
             </div>
           </div>
           <div class="left">
-            <img src="public/images/illustration-hero.svg" alt="hero-image" />
+            <img
+              src="public/images/illustration-hero.svg"
+              class="main-image"
+              alt="hero-image"
+            />
           </div>
         </div>
       </section>
@@ -206,7 +111,7 @@
             <h2 class="txt-primary-900 fw-semiBold fs-600 text-align">
               Features
             </h2>
-            <p class="txt-primary-300 fw-regular fs-500" limit>
+            <p class="txt-primary-300 fw-regular fs-500 text-align" limit>
               Our aim is to make it quick and easy for you to access your
               favourite websites. Your bookmarks sync between your devices so
               you can access them on the go.
@@ -262,16 +167,21 @@
                 />
               </div>
               <div class="right flow">
-                <h3 class="txt-primary-900 fs-600">
-                  A Simple Bookmark Manager
+                <h3 class="txt-primary-900 fs-600 s-text-align">
+                  Bookmark in one click
                 </h3>
-                <p class="txt-primary-300 fs-500 fw-regular">
-                  A clean and simple interface to organize your favourite
-                  websites. Open a new browser tab and see your sites load
-                  instantly. Try it for free.
+                <p class="txt-primary-300 fs-500 fw-regular s-text-align">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
                 </p>
                 <div class="button-group">
-                  <button class="button">More info</button>
+                  <button
+                    class="button"
+                    aria-label="more information on Bookmark in one click"
+                  >
+                    More info
+                  </button>
                 </div>
               </div>
             </div>
@@ -289,16 +199,21 @@
                 />
               </div>
               <div class="right flow">
-                <h3 class="txt-primary-900 fs-600">
-                  A Simple Bookmark Manager
+                <h3 class="txt-primary-900 fs-600 s-text-align">
+                  Intelligent search
                 </h3>
-                <p class="txt-primary-300 fs-500 fw-regular">
-                  A clean and simple interface to organize your favourite
-                  websites. Open a new browser tab and see your sites load
-                  instantly. Try it for free.
+                <p class="txt-primary-300 fs-500 fw-regular s-text-align">
+                  Our powerful search feature will help you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
                 </p>
                 <div class="button-group">
-                  <button class="button">More info</button>
+                  <button
+                    class="button"
+                    aria-label="more information on intelligent search"
+                  >
+                    More info
+                  </button>
                 </div>
               </div>
             </div>
@@ -316,16 +231,21 @@
                 />
               </div>
               <div class="right flow">
-                <h3 class="txt-primary-900 fs-600">
-                  A Simple Bookmark Manager
+                <h3 class="txt-primary-900 fs-600 s-text-align">
+                  Share your bookmarks
                 </h3>
-                <p class="txt-primary-300 fs-500 fw-regular">
-                  A clean and simple interface to organize your favourite
-                  websites. Open a new browser tab and see your sites load
-                  instantly. Try it for free.
+                <p class="txt-primary-300 fs-500 fw-regular s-text-align">
+                  Easily share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a
+                  button.
                 </p>
                 <div class="button-group">
-                  <button class="button">More info</button>
+                  <button
+                    class="button"
+                    aria-label="more info share your bookmarks"
+                  >
+                    More info
+                  </button>
                 </div>
               </div>
             </div>
@@ -338,12 +258,12 @@
             <h2 class="txt-primary-900 fw-semiBold fs-600 text-align">
               Download the extension
             </h2>
-            <p class="txt-primary-300 fw-regular fs-500" limit>
+            <p class="txt-primary-300 fw-regular fs-500 text-align" limit>
               We’ve got more browsers in the pipeline. Please do let us know if
               you’ve got a favourite you’d like us to prioritize.
             </p>
           </hgroup>
-          <ul class="extension-card">
+          <ul class="extension-card flow" role="list">
             <li class="card">
               <img
                 src="public/images/logo-chrome.svg"
@@ -365,7 +285,7 @@
               <p class="title fw-semiBold fs-400 txt-primary-900">
                 Add to Chrome
               </p>
-              <p class="fs-300">Minimum version 62</p>
+              <p class="fs-300">Minimum version 55</p>
               <button class="button">Add & Install Extension</button>
             </li>
             <li class="card">
@@ -377,7 +297,7 @@
               <p class="title fw-semiBold fs-400 txt-primary-900">
                 Add to Chrome
               </p>
-              <p class="fs-300">Minimum version 62</p>
+              <p class="fs-300">Minimum version 46</p>
               <button class="button">Add & Install Extension</button>
             </li>
           </ul>
@@ -389,46 +309,104 @@
             <h2 class="txt-primary-900 fw-semiBold fs-600 text-align">
               Frequently Asked Questions
             </h2>
-            <p class="txt-primary-300 fw-regular fs-500" limit>
+            <p class="txt-primary-300 fw-regular fs-500 text-align" limit>
               Here are some of our FAQs. If you have any other questions you’d
               like answered please feel free to email us.
             </p>
           </hgroup>
-          <ul class="ques-ans" role="list">
-            <li class="padding-block-300">
+          <ul
+            class="ques-ans"
+            role="list"
+            aria-label="Frequently asked question list"
+          >
+            <li
+              class="padding-block-300"
+              tabindex="0"
+              id="question-1"
+              aria-control="answer-1"
+              aria-expanded="true"
+              aria-selected="true"
+            >
               <p class="question txt-primary-900 fs-500">What is Bookmark?</p>
-              <p class="answer txt-primary-300 fs-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                tincidunt justo eget ultricies fringilla. Phasellus blandit
-                ipsum quis quam ornare mattis.
-              </p>
+              <div class="answer" id="answer-1" aria-labelledby="question-1">
+                <p class="txt-primary-300 fs-500 padding-block-300">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  tincidunt justo eget ultricies fringilla. Phasellus blandit
+                  ipsum quis quam ornare mattis.
+                </p>
+              </div>
             </li>
-            <li class="padding-block-300">
-              <p class="question txt-primary-900 fs-500">What is Bookmark?</p>
-              <p class="answer txt-primary-300 fs-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                tincidunt justo eget ultricies fringilla. Phasellus blandit
-                ipsum quis quam ornare mattis.
+            <li
+              class="padding-block-300"
+              tabindex="0"
+              id="question-2"
+              aria-control="answer-2"
+              aria-expanded="false"
+              aria-selected="false"
+            >
+              <p class="question txt-primary-900 fs-500">
+                How can I request a new browser?
               </p>
+              <div class="answer" id="answer-2" aria-labelledby="question-2">
+                <p class="txt-primary-300 fs-500 padding-block-300">
+                  Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                  massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                  luctus eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdie tVivamus luctus
+                  eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdiet.
+                </p>
+              </div>
             </li>
-            <li class="padding-block-300">
-              <p class="question txt-primary-900 fs-500">What is Bookmark?</p>
-              <p class="answer txt-primary-300 fs-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                tincidunt justo eget ultricies fringilla. Phasellus blandit
-                ipsum quis quam ornare mattis.
+            <li
+              class="padding-block-300"
+              tabindex="0"
+              id="question-3"
+              aria-control="answer-3"
+              aria-expanded="false"
+              aria-selected="false"
+            >
+              <p class="question txt-primary-900 fs-500">
+                Is there a mobile app?
               </p>
+              <div class="answer" id="answer-3" aria-labelledby="question-3">
+                <p class="txt-primary-300 fs-500 padding-block-300">
+                  Sed consectetur quam id neque fermentum accumsan. Praesent
+                  luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                  Cras in ligula quis est pharetra mattis sit amet pharetra
+                  purus. Sed sollicitudin ex et ultricies bibendum.
+                </p>
+              </div>
             </li>
-            <li class="padding-block-300">
-              <p class="question txt-primary-900 fs-500">What is Bookmark?</p>
-              <p class="answer txt-primary-300 fs-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                tincidunt justo eget ultricies fringilla. Phasellus blandit
-                ipsum quis quam ornare mattis.
+            <li
+              class="padding-block-300"
+              tabindex="0"
+              id="question-4"
+              aria-control="answer-4"
+              aria-expanded="false"
+              aria-selected="false"
+            >
+              <p class="question txt-primary-900 fs-500">
+                What about other Chromium browsers?
               </p>
+              <div class="answer" id="answer-4" aria-labelledby="question-4">
+                <p class="txt-primary-300 fs-500 padding-block-300">
+                  Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                  placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                  gravida pellentesque non ut velit. More Info 35,000+ already
+                  joined Stay up-to-date with what we’re doing Contact Us
+                  Features Pricing Contact.
+                </p>
+              </div>
             </li>
           </ul>
-          <button class="button">More Info</button>
+          <button
+            class="button"
+            no="2"
+            aria-label="more info on Download the extension"
+          >
+            More Info
+          </button>
         </div>
       </section>
       <section class="contact-us padding-block-800 bg-primary-400">
@@ -437,32 +415,31 @@
             <h2 class="txt-neutral-200 fw-semiBold fs-300 text-align">
               35,000+ ALREADY JOINED
             </h2>
-            <p class="txt-neutral-200 fw-regular fs-600 text-align">
+            <p class="txt-neutral-200 fw-regular fs-600 text-align" limit>
               Stay up-to-date with what we're doing
             </p>
           </hgroup>
-          <form action="post">
-            <div class="input-container">
+          <form action="post" class="connection-form">
+            <div class="input-container" error="false">
               <input
                 class="txt-primary-300 fs-300"
                 type="email"
                 name="email"
                 placeholder="Enter your email address"
+                required
               />
               <p class="error fs-300 txt-neutral-200 fw-regular">
                 whoops, make sure it's a email
               </p>
             </div>
-            <button type="submit" class="button" invert>contact us</button>
+            <button type="submit" class="button" no="2">contact us</button>
           </form>
         </div>
       </section>
     </main>
-    <footer class="bg-primary-800">
+    <footer class="bg-primary-800 padding-block-300">
       <div class="container footer-navigation">
-        <svg class="icon" style="--color: white">
-          <use xlink:href="images/all-logo.svg#logo-bookmark"></use>
-        </svg>
+        <img src="public/images/logo-bookmark-white.svg" alt="logo-image" />
         <nav aria-labelledby="secondary navigation" id="secondary_nav">
           <ul role="list">
             <li aria-current="page">
@@ -477,8 +454,12 @@
           </ul>
         </nav>
 
-        <img src="public/images/icon-facebook.svg" alt="facebook icon" />
-        <img src="public/images/icon-twitter.svg" alt="facebook icon" />
+        <div class="icon-container">
+          <a href=""
+            ><img src="public/images/icon-facebook.svg" alt="icon"
+          /></a>
+          <a href=""><img src="public/images/icon-twitter.svg" alt="icon" /></a>
+        </div>
       </div>
       <p class="attribution">
         Challenge by
